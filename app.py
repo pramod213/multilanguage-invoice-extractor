@@ -1,13 +1,13 @@
-from dotenv import load_dotenv
+from dotenv import load_dotenv # pyright: ignore[reportMissingImports]
 load_dotenv()
 
 import streamlit as st
 import os
 from PIL import Image
-import google.generativeai as genai
+import google.generativeai as genai # pyright: ignore[reportMissingImports]
 import time
-from google.api_core.exceptions import ResourceExhausted
-from pdf2image import convert_from_bytes
+from google.api_core.exceptions import ResourceExhausted # pyright: ignore[reportMissingImports]
+from pdf2image import convert_from_bytes # pyright: ignore[reportMissingImports]
 import io
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
